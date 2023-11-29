@@ -1,0 +1,46 @@
+
+<div *ngFor="let post of posts">
+
+    <div *ngIf="!post.active">
+      <div *ngIf="post.type === 'news'">
+        <div class="card">
+                        <div ngClass="bg-warning">
+                      
+                          <div class="card-body">
+                            <h5 class="card-title">{{post.title}}</h5>
+                            <p class="card-text">{{post.body}}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+      </div>
+      </div>
+    </div>
+    <div *ngIf="!post.active">
+      <div *ngIf="post.type === 'politic'">
+        <div class="card">
+                        <div ngClass="bg-dark  text-white">
+                      
+                          <div class="card-body">
+                            <h5 class="card-title">{{post.title}}</h5>
+                            <p class="card-text">{{post.body}}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+      </div>
+      </div>
+      </div>
+      <div *ngIf="!post.active">
+        <div *ngIf="post.type === 'education'">
+          <div class="card">
+                          <div ngClass="bg-primary">
+                        
+                            <div class="card-body">
+                              <h5 class="card-title">{{post.title}}</h5>
+                              <p class="card-text">{{post.body}}</p>
+                              <a href="#" class="btn btn-secondary">Go somewhere</a>
+                            </div>
+                          </div>
+        </div>
+        </div>
+        </div>
+    </div>
